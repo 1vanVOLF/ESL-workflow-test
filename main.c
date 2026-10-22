@@ -9,6 +9,9 @@ int main(void)
     Vector3D sum = vec_add(v1, v2);
     printf("Sum: (%.1f, %.1f, %.1f)\n", sum.x, sum.y, sum.z);
 
+    Vector3D sub = vec_sub(v1, v2);
+    printf("Sub: (%.1f, %.1f, %.1f)\n", sub.x, sub.y, sub.z);
+
     double dot = vec_dot(v1, v2);
     printf("Dot product: %.1f\n", dot);
 
