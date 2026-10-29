@@ -12,4 +12,6 @@ $(TARGET): $(OBJS)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	del /Q $(OBJS) $(TARGET).exe
+	rm -f $(TARGET) $(OBJS)
+
+.PHONY: all clean
